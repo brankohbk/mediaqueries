@@ -1,0 +1,131 @@
+                 :root {
+                  --orange: #fd7e14;
+                }
+                
+                * {
+                  margin: 0;
+                  padding: 0;
+                  font-family: Roboto;
+                }
+                
+                .border {
+                  border: 1px solid black;
+                }
+                
+                body {
+                  background-color: rgba(128, 128, 128, 0.356);
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  min-height: 100vh;
+                  text-align: center;
+                  background-image: url("../img/topography.svg");
+                }
+                
+                nav {
+                  /* justify-content: space-between; */
+                  padding: 0 2em;
+                  color: whitesmoke;
+                  background-color: var(--orange);
+                }
+                
+                nav * {
+                  align-items: center;
+                  align-self: center;
+                  margin-left: 1em;
+                }
+                
+                nav img {
+                  max-height: 4em;
+                  margin-left: 0em;
+                }
+                
+                main {
+                  padding: 1.5em;
+                  flex-grow: 1;
+                }
+                
+                #playfield {
+                  background-color: rgba(255, 140, 0, 0.274);
+                  padding: 0 1em;
+                }
+                
+                #playfield * {
+                  margin: 1em 0;
+                }
+                
+                footer {
+                  padding: 1em;
+                  color: whitesmoke;
+                  background-color: var(--orange);
+                  position: fixed;
+                  bottom: 0;
+                }
+                /* classes */
+                
+                .d-flex {
+                  display: flex;
+                }
+                
+                .flex-wrap {
+                  flex-wrap: wrap;
+                }
+                
+                .space-around {
+                  justify-content: space-around;
+                }
+                
+                .d-inlineflex {
+                  display: inline-flex;
+                }
+                
+                .d-none {
+                  display: none;
+                }
+                
+                .w-100 {
+                  width: 100%;
+                }
+                /* MEDIA QUERIES */
+                
+                @media (min-width:576px) {
+                  .d-sm-none {
+                    display: none;
+                  }
+                  .d-sm-inline {
+                    display: inline;
+                  }
+                  nav h1 {
+                    margin-left: 0em;
+                  }
+                }
+                
+                @media (min-width:768px) {
+                  .d-md-none {
+                    display: none;
+                  }
+                  .d-md-inline {
+                    display: inline;
+                  }
+                  .w-md-40 {
+                    width: 40%;
+                  }
+                }
+                
+                @media (min-width:992px) {
+                  .bg-lg-color {
+                    background-color: goldenrod;
+                  }
+                }
+                
+                @media (orientation:landscape) {
+                  .d-land-none {
+                    display: none;
+                  }
+                }
+                
+                @media (orientation:landscape) and (min-width:768px) {
+                  .d-land-md-inline {
+                    display: inline;
+                  }
+                }
